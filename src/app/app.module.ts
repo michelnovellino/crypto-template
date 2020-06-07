@@ -8,11 +8,11 @@ import { HighlightCardComponent } from './components/highlight-card/highlight-ca
 import { ListComponent } from './components/list/list.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightCardComponent,
     ListComponent,
     HeaderComponent,
     FooterComponent
@@ -20,7 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
