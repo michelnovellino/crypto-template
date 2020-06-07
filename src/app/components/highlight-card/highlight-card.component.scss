@@ -1,5 +1,11 @@
 :host{
-  .card-title{
-    color:#fafafa
+  .card{
+    .card-title{
+      color:#fafafa
+    }
+    p{
+      color: #82b1ff;
+      font-weight: bold;
+    }
   }
 }
