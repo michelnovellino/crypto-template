@@ -1,12 +1,25 @@
-<div>
+<div class="container">
   <ngx-slick-carousel
-    class="carousel"
+    class="carousel mx-auto"
     #slickModal="slick-carousel"
     [config]="slideConfig"
     (init)="slickInit($event)"
   >
     <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-     {{slide.name}}
+     <div class="values">
+       <span class="text-success" *ngIf="slide.percentage > 0 ">({{slide.percentage}}%) </span>
+       <span class="text-danger" *ngIf="slide.percentage < 0 ">({{slide.percentage}}%) </span>
+
+       <span>
+      <i *ngIf="slide.icon == 'up'" class="material-icons bg-success">
+        arrow_drop_up
+      </i>
+      <i *ngIf="slide.icon == 'down'" class="material-icons bg-danger">
+        arrow_drop_down
+      </i>
+      <b> {{slide.short}}</b></span>
+    </div>
+     <div class="values">$ {{slide.value}} {{slide.name}}</div>
     </div>
   </ngx-slick-carousel>
 </div>
