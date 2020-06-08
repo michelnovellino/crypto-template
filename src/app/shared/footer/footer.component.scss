@@ -1,8 +1,15 @@
-:host{
-  .footer-logo{
-    max-width:250px;
+:host {
+  .divider {
+    height: 2.5rem;
   }
-  .social-icon{
+  footer {
+    background-color: #eceff1;
+    border-radius: 5rem 5rem 0 0;
+  }
+  .footer-logo {
+    max-width: 250px;
+  }
+  .social-icon {
     width: 18px;
   }
 }
