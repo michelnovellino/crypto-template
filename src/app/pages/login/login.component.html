@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-12 col-md-3 mx-auto py-5 my-5  ">
+
+    <div class="card rounded py-4">
+      <div class="card-body">
+        <div class="card-title">
+          <h5>Accede a tu cuenta</h5>
+        </div>
+        <form class="form text-center" (ngSubmit)="submit()" [formGroup]="form">
+          <div class="row mb-2">
+            <div class="col-12">
+              <input type="text" placeholder="Nombre de usuario"  class="form-control" formControlName="username" id="username" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <input type="password" placeholder="Contraseña" class="form-control"  formControlName="password" id="password" />
+            </div>
+          </div>
+          <br>
+
+          <div class="row text-center">
+            <button type="submit" class="btn bg-green text-white mx-auto">
+              Acceder
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</div>

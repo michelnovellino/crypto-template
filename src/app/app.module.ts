@@ -13,6 +13,7 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CoinsService } from './services/coins.service';
 import { MainInterceptor } from './interceptors/main.interceptor';
+import { LoginModule } from './pages/login/login.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MainInterceptor } from './interceptors/main.interceptor';
     NgbModule,
     SharedModule,
     DashboardModule,
+    LoginModule,
     HttpClientModule
   ],
   providers: [
