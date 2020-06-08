@@ -1,4 +1,20 @@
-# Approsal
+# Test
+
+## Features
+algunas de las catacterísticas implementadas.
+
+### Auth guards
+### Interceptors
+### Services
+### Separacion y uso de propiedades para componentes dinamicos.
+### Componentes compartidos
+### Uso de sass y encapsulamiento de estilos.
+### Uso de modulos para controlar que no se importan codigos innecesarios.
+
+## Para arrancar el proyecto.
+npm i
+ng serve
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
