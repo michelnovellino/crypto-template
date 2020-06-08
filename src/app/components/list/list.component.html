@@ -1,1 +1,22 @@
-<p>list works!</p>
+<table class="table  w-100">
+  <thead>
+    <tr>
+      <th scope="col">TRANSACCIÓN</th>
+      <th scope="col">MONTO</th>
+      <th scope="col">STATUS</th>
+      <th scope="col">FECHA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items; index as i">
+      <th scope="row">{{item.type }}</th>
+      <td>
+        {{ item.amount }}
+      </td>
+      <td *ngIf="item.status == 1"><span class="text-white bg-success" >APROBADA</span></td>
+      <td *ngIf="item.status == 2"><span class="text-white bg-warning" >PENDIENTE</span></td>
+      <td *ngIf="item.status == 3"><span class="text-white bg-danger" >RECHAZADA</span></td>
+      <td>{{ item.date }}</td>
+    </tr>
+  </tbody>
+</table>

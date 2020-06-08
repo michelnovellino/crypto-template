@@ -2,32 +2,59 @@
   <div class="row pt-1">
     <app-header></app-header>
   </div>
-  <div class="row mt-3">
-    <div class="col-4">
+  <div class="row justify-content-between align-items-baseline mt-5">
+    <div class="col-12 col-md-2">
       <img src="assets/images/logo.jpg" class="w-100" alt="logo" />
+    </div>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="row align-items-baseline">
+        <div class="col-12 col-md-3 text-md-right">
+          <p class="text-green">3.254.186,32</p>
+        </div>
+        <div class="col-12 col-md-8">
+          <button class="btn mr-2 bg-green text-white">
+            Pagar Orden
+          </button>
+          <button class="btn mr-2 bg-green text-white">
+            Compra - Venta
+          </button>
+          <span class="username"> RafaelCm89</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3 mb-3">
+    <div class="col-12 col-md-3">
+      <h1>Bienvenido</h1>
+      <h5>mis billeteras o cuentas.</h5>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-12 col-md-3 my-3">
+    <div class="col-12 col-md-4 my-3">
       <app-highlight-card
         [title_bg]="'#004d40'"
         [value]="'230.90'"
         [title]="'Bolívares Soberanos'"
       ></app-highlight-card>
     </div>
-    <div class="col-12 col-md-3 my-3">
+    <div class="col-12 col-md-4 my-3">
       <app-highlight-card
         [title_bg]="'#ffc400'"
         [value]="'230.90'"
         [title]="'Bitcoin'"
       ></app-highlight-card>
     </div>
-    <div class="col-12 col-md-3 my-3">
+    <div class="col-12 col-md-4 my-3">
       <app-highlight-card
         [title_bg]="'#b71c1c'"
         [value]="'230.90'"
         [title]="'Petros'"
       ></app-highlight-card>
     </div>
+  </div>
+  <div class="row">
+  <div class="col-12">
+    <app-list [items]="items"></app-list>
+  </div>
   </div>
 </div>

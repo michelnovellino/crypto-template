@@ -44,7 +44,7 @@ export class HeaderComponent implements OnInit {
     ],
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 55000,
+    autoplaySpeed: 5000,
   };
 
   constructor(public service: CoinsService) { }

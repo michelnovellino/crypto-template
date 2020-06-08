@@ -16,8 +16,7 @@ import { MainInterceptor } from './interceptors/main.interceptor';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
