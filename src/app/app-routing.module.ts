@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Route } from '@angular/compiler/src/core';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
 
 // lazy routes
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: DashboardComponent,
+    canActivate:[AuthGuard]
   },
   {
     path: 'login',
